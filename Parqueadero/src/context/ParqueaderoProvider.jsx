@@ -18,8 +18,7 @@ const ParqueaderoProvider = ({ children }) => {
     nuevasCeldas[numeroCelda - 1] = true; // Marcar la celda como ocupada
     setCeldasOcupadas(nuevasCeldas);
   
-    // Aquí se puede manejar el registro de las celdas asignadas a cada tipo de vehículo si es necesario
-    // Por ejemplo:
+    // Aquí se maneja el registro de las celdas asignadas a cada tipo de vehículo si es necesario
     if (tipoVehiculo === 'carro') {
       setCeldasDisponiblesCarros(celdasDisponiblesCarros.filter((c) => c !== parseInt(numeroCelda)));
     } else if (tipoVehiculo === 'moto') {
