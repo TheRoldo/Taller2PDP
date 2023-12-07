@@ -17,7 +17,7 @@ const Dashboard = () => {
   }, [loggedIn, navigate]);
 
   return (
-    <div>
+    <div className='dashboard'>
       <h1>Dashboard</h1>
       <button onClick={logout}>Cerrar sesión</button>
       <FormularioRegistroVehiculo />
